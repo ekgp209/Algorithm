@@ -1,5 +1,5 @@
 package Lv1;
-// 내적
+
 class Solution {
     public int solution(int[] a, int[] b) {
         int answer = 0;

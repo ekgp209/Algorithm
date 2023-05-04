@@ -1,5 +1,5 @@
 package Lv1;
-// 최대공약수와 최소공배수
+
 class Solution {
     public int[] solution(int n, int m) {
         int[] answer = {0, 0};

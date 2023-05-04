@@ -5,7 +5,7 @@ class Solution {
     Set<Integer> numbersSet = new HashSet<>();
     
     public int solution(String numbers) {
-        dfs("", numbers);
+        recursion("", numbers);
         
         int count = 0;
         Iterator<Integer> iter = numbersSet.iterator();
@@ -34,13 +34,13 @@ class Solution {
     }
     
     //숫자 조합하기
-    public void dfs(String str, String numbers){
+    public void recursion(String str, String numbers){
         if(!str.equals("")){
             numbersSet.add(Integer.valueOf(str));
         }
         
         for(int i=0; i<numbers.length(); i++){
-            dfs(str + numbers.charAt(i), numbers.substring(0, i) + numbers.substring(i+1));
+            recursion(str + numbers.charAt(i), numbers.substring(0, i) + numbers.substring(i+1));
         }
     }
 }

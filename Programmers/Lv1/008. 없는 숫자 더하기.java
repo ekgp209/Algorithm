@@ -1,5 +1,5 @@
 package Lv1;
-// 없는 숫자 더하기
+
 import java.util.Arrays;
 
 class Solution {

@@ -1,5 +1,5 @@
 package Lv1;
-// 평균 구하기
+
 class Solution {
     public double solution(int[] arr) {
         int sum = 0;
