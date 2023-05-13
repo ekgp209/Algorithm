@@ -1,5 +1,5 @@
 // 스택/큐. 같은 숫자는 싫어(for)
-public class Solution {
+class Solution {
     public int[] solution(int []arr) {
         int cnt = 1;
         

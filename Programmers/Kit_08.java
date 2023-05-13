@@ -1,7 +1,7 @@
 // 스택/큐. 같은 숫자는 싫어(ArrayList)
 import java.util.*;
 
-public class Solution {
+class Solution {
     public int[] solution(int []arr) {
         
        List<Integer> list = new ArrayList<>();
