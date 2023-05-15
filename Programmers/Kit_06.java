@@ -1,25 +1,16 @@
 // 완전탐색. 최소직사각형
 class Solution {
     public int solution(int[][] sizes) {
-        int answer = 0;
         int max_w  = 0;
         int max_h = 0;
         
-        //가장 긴 가로,세로 길이 찾기
         for(int i=0; i<sizes.length; i++){
-            if(max_w < sizes[i][0]){
-                max_w = sizes[i][0];           //가로
-            }
-            if(max_h < sizes[i][1]){
-                max_h = sizes[i][1];           //세로
-            }
+            int w = Math.max(sizes[i][0], sizes[i][1]);     //긴 길이
+            int h = Math.min(sizes[i][0], sizes[i][1]);     //짧은 길이
             
-            if(sizes[i][1] <= max_w && sizes[i][0] <= max_h){
-                   
-            }
+            max_w = Math.max(max_w, w);
+            max_h = Math.max(max_h, h);
         }
-        
-        answer = max_h*max_w;
-        return answer;
+        return max_w*max_h;
     }
 }
