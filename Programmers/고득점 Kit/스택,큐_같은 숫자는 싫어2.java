@@ -1,3 +1,4 @@
+// for
 class Solution {
     public int[] solution(int []arr) {
         int cnt = 1;
