@@ -14,7 +14,6 @@ class Main {
         for(int i=0; i<cNum.length; i++) {
             sum += cNum[i] - '0';
         }
-        
         System.out.println(sum);
     }
 }
