@@ -9,7 +9,7 @@ class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
 
-        int start = 0, end = 0;     //투포인터 설정
+        int start = 1, end = 1;     //투포인터 설정
         int sum = 0, cnt = 0;
         while(start <= N) {
             //합이 N과 일치할 때
