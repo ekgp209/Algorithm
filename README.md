@@ -1,9 +1,9 @@
-# algorithm
-🔖 Solve the algorithm
+# 알고리즘 문제 풀이 저장소
+### 🔖 Solve the algorithm with
 
-프로그래머스, 백준 알고리즘 문제풀이
-
-*프로젝트에 관심갖을 수 있도록 그림으로 꾸미기
-<img src='images/java.png' height=200 width=200> </img>
+<img src='images/java.png' height=auto width=400> </img>
 
 
+### 문제 푸는 사이트 : 
+1. **BOJ** : 백준 온라인 저지
+2. **Programmers** : 프로그래머스
