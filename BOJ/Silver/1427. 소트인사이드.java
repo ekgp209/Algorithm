@@ -1,13 +1,12 @@
-package BOJ;
+package BOJ.Silver;
 
 import java.util.Scanner;
 
-public class test2 {
+class Main {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
 
         String N = scan.next();   //정렬할 수
-
         int[] arr = new int[N.length()];     
         for(int i=0; i<arr.length; i++){
             arr[i] = N.charAt(i) - '0';     //자릿수별로 분리
