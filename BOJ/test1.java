@@ -1,29 +1,30 @@
 package BOJ;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class test1 {
-    public static void solution(){
-        Scanner sc = new Scanner(System.in);
+    public static void solution() throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int N = sc.nextInt();   //N장의 카드
-        Queue<Integer> cardQueue = new LinkedList<>();
+        int N = Integer.parseInt(br.readLine());    //수의 개수
+        int[] arr = new int[N];
         for(int i=1; i<=N; i++){
-            cardQueue.add(i);   //카드를 순서대로 큐에 저장
+            arr[i] = Integer.parseInt(br.readLine());
         }
 
-        while(cardQueue.size() > 1){
-            cardQueue.poll();   //맨 위 카드 버리기
-            int tmp = cardQueue.peek();     //맨 위 카드 저장
-            cardQueue.poll();
-            cardQueue.add(tmp);
+        //기수 정렬
+        int[] tempArr = new int[10];     //자리수에 따라 임시 정렬하는 배열
+        int a = 1;                       //자릿수
+        for(int i=0; i<N; i++){
+            tempArr[(arr[i]/a) % 10]
         }
-        System.out.println(cardQueue.poll());
+
+
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         solution();
     }
 }

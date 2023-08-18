@@ -17,10 +17,10 @@ class Main {
             public int compare(Integer o1, Integer o2) {
                 if(Math.abs(o1) > Math.abs(o2)) {
                     return 1;           //o2뒤에 o1추가
-                }else if(Math.abs(o1) < Math.abs(o2)) {
+                }else if(Math.abs(o1) == Math.abs(o2)){
+                    return o1 - o2;     //음수: o2앞에, 양수: o2뒤에 추가
+                }else{
                     return -1;          //o2앞에 o1추가
-                }else{                  //절대값이 같은 경우
-                    return o1-o2;       //음수: o2앞에, 양수: o2뒤에 추가
                 }
             }
         });
