@@ -1,29 +1,28 @@
 package BOJ;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 public class test1 {
-    public static void solution(){
-        Scanner sc = new Scanner(System.in);
+    static ArrayList<Integer>[] list;
+    static boolean[] visited;
+    static int answer;
 
-        int N = sc.nextInt();   //N장의 카드
-        Queue<Integer> cardQueue = new LinkedList<>();
-        for(int i=1; i<=N; i++){
-            cardQueue.add(i);   //카드를 순서대로 큐에 저장
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int N = Integer.parseInt(st.nextToken());   //노드 수
+        int M = Integer.parseInt(st.nextToken());   //간선(에지) 수
+
+        visited = new boolean[N+1];
+        list = new ArrayList[N+1];
+        for(int i=0; i<N+1; i++){
+            list[i] = new ArrayList<>();
         }
 
-        while(cardQueue.size() > 1){
-            cardQueue.poll();   //맨 위 카드 버리기
-            int tmp = cardQueue.peek();     //맨 위 카드 저장
-            cardQueue.poll();
-            cardQueue.add(tmp);
-        }
-        System.out.println(cardQueue.poll());
-    }
-
-    public static void main(String[] args) {
-        solution();
+        
     }
 }
