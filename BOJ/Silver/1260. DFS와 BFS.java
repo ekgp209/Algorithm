@@ -6,7 +6,7 @@ import java.util.*;
 //1260 DFS와 BFS
 class Main {
     
-    static int[][] map;
+    static ArrayList<Integer>[] arr;
     static boolean[] visited;
     static int N, M, V;
 
@@ -18,18 +18,28 @@ class Main {
         M = Integer.parseInt(st.nextToken());   //간선의 개수
         V = Integer.parseInt(st.nextToken());   //탐색을 시작할 정점의 번호
 
-        st = new StringTokenizer(br.readLine());
+        arr = new ArrayList[N+1];
+        visited = new boolean[N+1];
+
+        for(int i=1; i<=N; i++){
+            arr[i] = new ArrayList<>();         //초기화  
+        }
+        
         for(int i=0; i<M; i++){
-            
+            st = new StringTokenizer(br.readLine());
+            int a = Integer.parseInt(st.nextToken());
+            int
         }
     }
 
-    public void dfs(int V){
-        visited[V] = true;
-        System.out.print(V + " ");
+    public void DFS(int v){
+        visited[v] = true;
+        System.out.print(v + " ");
 
-        for(int i=1; i<=N+1; i++){
-            
+        for(int i : arr[v]){
+            if(visited[i] == false){    //방문하지 않은 노드만 탐색
+                DFS(i);
+            }
         }
     }
 }
