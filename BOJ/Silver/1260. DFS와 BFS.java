@@ -30,7 +30,7 @@ class Main {
             int from = Integer.parseInt(st.nextToken());
             int to = Integer.parseInt(st.nextToken());
 
-            list[from].add(to);     //양쪾에 간선 추가
+            list[from].add(to);     //양쪽에 간선 추가
             list[to].add(from);
         }
 
