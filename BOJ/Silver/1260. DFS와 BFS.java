@@ -1,10 +1,10 @@
-package BOJ;
+package BOJ.Silver;
 
 import java.io.*;
 import java.util.*;
 
 //1260 DFS와 BFS
-public class test2 {
+class Main {
     
     static int[][] map;
     static boolean[] visited;
@@ -29,7 +29,7 @@ public class test2 {
         System.out.print(V + " ");
 
         for(int i=1; i<=N+1; i++){
-            if()
+            
         }
     }
 }
