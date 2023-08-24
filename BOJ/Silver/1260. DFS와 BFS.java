@@ -62,10 +62,10 @@ class Main {
         visited[idx] = true;
 
         while(!queue.isEmpty()){
-            int nowNow = queue.poll();
-            System.out.print(nowNow + " ");
+            int nowNode = queue.poll();
+            System.out.print(nowNode + " ");
 
-            for(int i : list[nowNow]){
+            for(int i : list[nowNode]){
                 //현재 노드의 연결 중 미방문 노드를 큐에 삽입하고 방문 배열에 기록
                 if(visited[i] == false){
                     visited[i] = true;
