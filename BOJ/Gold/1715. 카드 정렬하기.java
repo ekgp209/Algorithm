@@ -3,7 +3,7 @@ package BOJ.Gold;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-public class P1715_카드정렬하기 {
+class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
