@@ -21,9 +21,9 @@ class Main {
 
         int answer = 0;
         for(int i=N-1; i>=0; i--){
-            while(coin[i] <= K){
-                K = K - coin[i];
-                answer++;
+            if(coin[i] <= K){
+                answer += (K/coin[i]);  //현재 동전의 가치로 구할 수 있는 최대의 개수 구하기
+                K = K % coin[i];
             }  
         }
         System.out.println(answer);
