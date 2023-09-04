@@ -22,8 +22,11 @@ public class P1931_회의실배정 {
         Arrays.sort(time, new Comparator<int[]>() {
             @Override
             public int compare(int[] o1, int[] o2){
-
-                return -1;
+                //회의 종료시간이 같은 경우
+                if(o1[1] == o2[1]){
+                    return o1[0] - o2[0];   //사작시간이 빠른순으로 정렬
+                }
+                return o1[1] - o2[1];
             }
         });
 
