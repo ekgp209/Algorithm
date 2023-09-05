@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-public class P2751_수정렬하기2 {
+class Main {
     public static int[] arr, tmp;    //정렬할 배열, 합치는 과정에서 정렬하여 원소를 담을 임시배열
 
     public static void main(String[] args) throws IOException{
