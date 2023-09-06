@@ -9,7 +9,7 @@ class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         int M = Integer.parseInt(st.nextToken());   //M이상
-        int N = Integer.parseInt(st.nextToken());   //N이하
+        int N = Integer.parseInt(st.nextToken());   //N이하 
 
         //1. N까지의 배열 생성
         int[] arr = new int[N+1];
