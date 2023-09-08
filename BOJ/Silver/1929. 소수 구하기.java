@@ -3,7 +3,7 @@ package BOJ.Silver;
 import java.io.*;
 import java.util.*;
 
-class Main{
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -19,19 +19,19 @@ class Main{
 
         //2. 2부터 배수 삭제
         for(int i=2; i<=Math.sqrt(N); i++){     //제곱근까지만 비교 -> 이후는 어짜피 배수임
-            //배수로 처리한 상태 (-1)
-            if(arr[i] == -1){
+            //배수로 처리한 상태 (0)
+            if(arr[i] == 0){
                 continue;
             }
 
             for(int j=i+i; j<=N; j=j+i){
-                arr[j] = -1;
+                arr[j] = 0;
             }
         }
 
         //3. 삭제되지 않은 수 출력
         for(int i=M; i<=N; i++){
-            if(arr[i] != -1){
+            if(arr[i] != 0){
                 System.out.println(arr[i]);
             }
         }
