@@ -1,4 +1,4 @@
-package BOJ.Silver;
+package BOJ.Gold;
 
 import java.io.*;
 import java.util.*;
@@ -8,12 +8,12 @@ public class P1456_거의소수{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        long A = Long.parseLong(st.nextToken());   //A이상
-        long B = Long.parseLong(st.nextToken());   //B이하
+        double A = Double.parseDouble(st.nextToken());   //A이상
+        double B = Double.parseDouble(st.nextToken());   //B이하
 
         //1. B까지의 배열 생성
-        long[] arr = new long[(int) (B+1)];
-        for(int i=2; i<=B; i++){
+        double[] arr = new double[(int)(B+1)];
+        for(int i=2; i<arr.length; i++){
             arr[i] = i;
         }
 
@@ -30,9 +30,9 @@ public class P1456_거의소수{
         }
 
         //3. 거의 소수 찾기
-        for(int i=2; i<=B; i++){
+        for(int i=2; i<arr.length; i++){
             if(arr[i] != 0){
-                for(int j=2; j<=Math.sqrt(B); j++){
+                for(int j=2; j<arr.length; j++){
                     if(A <= Math.pow(i, j) && Math.pow(i, j) <= B){
                         cnt++;
                     }
