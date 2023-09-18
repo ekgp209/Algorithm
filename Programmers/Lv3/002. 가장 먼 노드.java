@@ -50,7 +50,7 @@ class Solution {
             for(int i : node[nowNode]){
                 if(!visited[i]){
                     visited[i] = true;
-                    answer[i] = answer[nowNode]+1;
+                    answer[i] = answer[nowNode]+1;  //이전 도시 방문 배열값 + 1
                     queue.add(i);
                 }
             }
