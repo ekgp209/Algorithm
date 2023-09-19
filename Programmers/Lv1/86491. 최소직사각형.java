@@ -1,3 +1,6 @@
+package Lv1;
+
+//완전탐색
 class Solution {
     public int solution(int[][] sizes) {
         int max_w  = 0;

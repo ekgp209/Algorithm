@@ -1,5 +1,8 @@
+package Lv1;
+
 import java.util.*;
 
+//완전탐색
 class Solution {
     public int[] solution(int[] answers) {
         int[] one = {1, 2, 3, 4, 5};    //5

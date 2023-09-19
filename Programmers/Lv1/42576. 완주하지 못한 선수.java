@@ -1,5 +1,8 @@
+package Lv1;
+
 import java.util.*;
 
+//해시
 class Solution {
     public String solution(String[] participant, String[] completion) {
         String answer = "";

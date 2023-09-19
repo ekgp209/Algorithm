@@ -1,5 +1,8 @@
+package Lv1;
+
 import java.util.Arrays;
 
+//탐욕법(Greedy)
 class Solution {
     public int solution(int n, int[] lost, int[] reserve) {
         int answer = n - lost.length;
