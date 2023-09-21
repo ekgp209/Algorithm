@@ -3,7 +3,7 @@ package BOJ.Silver;
 import java.io.*;
 import java.util.*;
 
-public class P1325_효율적인해킹 {
+class Main {
     static boolean[] visited;
     static ArrayList<Integer>[] node;
     static int[] answer;
