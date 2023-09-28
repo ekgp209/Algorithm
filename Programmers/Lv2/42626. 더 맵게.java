@@ -1,5 +1,8 @@
+package Lv2;
+
 import java.util.PriorityQueue;
 
+//힙(Heap)
 class Solution {
     public int solution(int[] scoville, int K) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();

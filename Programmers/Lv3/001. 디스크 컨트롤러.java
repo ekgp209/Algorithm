@@ -1,6 +1,6 @@
 package Lv3;
 
-import java.util.PriorityQueue;
+import java.util.*;
 
 class Solution {
     public int solution(int[][] jobs) {

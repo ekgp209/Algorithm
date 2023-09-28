@@ -1,7 +1,9 @@
-// HashSet
+package Lv2;
+
 import java.util.*;
 
-class Solution {
+// HashSet
+class Solution1 {
     public boolean solution(String[] phone_book) {
         Set<String> set = new HashSet<>();
         
@@ -14,6 +16,21 @@ class Solution {
                 if(set.contains(phone.substring(0, i))){
                     return false;
                 }
+            }
+        }
+        return true;
+    }
+}
+
+
+// for문
+class Solution2 {
+    public boolean solution(String[] phone_book) {
+        Arrays.sort(phone_book);
+        
+        for(int i=0; i<phone_book.length-1; i++){
+            if(phone_book[i+1].indexOf(phone_book[i]) == 0){
+                return false;
             }
         }
         return true;

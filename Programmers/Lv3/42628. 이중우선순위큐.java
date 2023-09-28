@@ -1,6 +1,8 @@
+package Lv3;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
+//힙(Heap)
 class Solution {
     public int[] solution(String[] operations) {
         PriorityQueue<Integer> minPq = new PriorityQueue<>();   //최소 힙

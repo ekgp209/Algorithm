@@ -1,5 +1,5 @@
 package Lv2;
-// 피보나치 수
+
 class Solution {
     public int solution(int n) {
         int answer = 0;

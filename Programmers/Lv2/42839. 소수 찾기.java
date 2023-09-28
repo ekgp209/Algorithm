@@ -1,5 +1,8 @@
+package Lv2;
+
 import java.util.*;
 
+//완전탐색
 class Solution {
     
     Set<Integer> numbersSet = new HashSet<>();

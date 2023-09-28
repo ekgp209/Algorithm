@@ -1,5 +1,8 @@
+package Lv2;
+
 import java.util.*;
 
+//해시
 class Solution {
     public int solution(String[][] clothes) {
         Map<String, Integer> map = new HashMap<>();

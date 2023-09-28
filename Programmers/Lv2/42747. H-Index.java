@@ -1,5 +1,8 @@
+package Lv2;
+
 import java.util.*;
 
+//정렬
 class Solution {
     public int solution(int[] citations) {
         int answer = 0;
