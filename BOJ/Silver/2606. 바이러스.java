@@ -3,7 +3,7 @@ package BOJ.Silver;
 import java.io.*;
 import java.util.*;
 
-public class P2606_바이러스 {
+class Main {
     static ArrayList<Integer>[] node;
     static boolean[] visited;
     static int cnt = 0;
