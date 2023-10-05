@@ -3,7 +3,7 @@ package BOJ.Silver;
 import java.util.*;
 import java.io.*;
 
-public class P2667_단지번호붙이기 {
+class Main {
     static int[][] node;
     static boolean[][] visited;
     static int[] dx = {0, 1, 0, -1};
