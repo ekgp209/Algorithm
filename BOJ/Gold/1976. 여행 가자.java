@@ -3,7 +3,7 @@ package BOJ.Gold;
 import java.io.*;
 import java.util.*;
 
-public class P1976_여행가자 {
+class Main {
     static int[] parent;
 
     public static void main(String[] args) throws IOException {
