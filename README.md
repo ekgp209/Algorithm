@@ -3,7 +3,7 @@
 # 알고리즘 문제 풀이 저장소
 ### 🔖 Solve the algorithm with
 
-<img src='images/java.png' height=auto width=400> </img>
+<img src='https://github.com/ekgp209/Algorithm/assets/49385606/d9558f34-c9e3-456a-96fc-504cd4de1437' height=280 width=500> </img>
 </div>
 
 ### 문제 푸는 사이트 : 
