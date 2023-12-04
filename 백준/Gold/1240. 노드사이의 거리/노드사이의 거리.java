@@ -7,12 +7,12 @@ public class Main{
     static int N;
 
     static class Node{
-        int next;
-        int dist;
+        int end;
+        int weight;
 
-        Node(int next, int dist){
-            this.next = next;
-            this.dist = dist;
+        Node(int end, int weight){
+            this.end = end;
+            this.weight = weight;
         }
     }
 
@@ -56,15 +56,15 @@ public class Main{
         while(!queue.isEmpty()){
             Node node = queue.poll();
             //목적지에 도달했을 경우
-            if(node.next == e){
-                dist = node.dist;
+            if(node.end == e){
+                dist = node.weight;
                 break;
             }
 
-            for(Node tmp : tree[node.next]){
-                if(!visited[tmp.next]){
-                    queue.add(new Node(tmp.next, node.dist + tmp.dist));
-                    visited[tmp.next] = true;
+            for(Node tmp : tree[node.end]){
+                if(!visited[tmp.end]){
+                    queue.add(new Node(tmp.end, node.weight + tmp.weight));
+                    visited[tmp.end] = true;
                 }
             }
         }
