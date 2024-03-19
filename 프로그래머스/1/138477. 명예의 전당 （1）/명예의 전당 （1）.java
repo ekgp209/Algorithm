@@ -8,16 +8,13 @@ class Solution {
         for(int i=0; i<score.length; i++){
             if(pq.size() < k){
                 pq.add(score[i]);
-                answer[i] = pq.peek();
             }else{
                 if(pq.peek() < score[i]){
                     pq.poll();
                     pq.add(score[i]);
-                    answer[i] = pq.peek();
-                }else{
-                    answer[i] = pq.peek();
-                }               
+                }              
             }
+            answer[i] = pq.peek();
         }
         return answer;
     }
